@@ -91,4 +91,7 @@ img.sp{
     text-decoration-color: yellow
     ;
 }
+.col-md-6 text-center{
+    align-content: space-around;
+}
 
