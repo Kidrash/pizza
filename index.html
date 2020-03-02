@@ -4,6 +4,7 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="shortcut icon" href="images/Bottle Animation.gif">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <title>Slice Pizza</title>
 </head>
@@ -11,10 +12,10 @@
     <div class="container-fluid" id="landing-pg">    
         <div class="row min-vh-100 align-items-center text-center justify-content-center flex-column">
             <div class="col-md-12 text-center" id="head">
-                <img src="assets/logo/logo.png" alt="">
+                <img src="/images/Bottle Animation.gif">
                 <h1><span class="space">SLICE<br></span></h1>
                 <p><span id="slogan">Slice all your problems away</span> </p>
-                <div class="mouse"><img src="assets/mouse_click.png" alt="" id="mouse"></div>
+                <div class="delivery"><img src="images/delivery.png" id="delivery"></div>
             </div>
         </div>
     </div>
@@ -25,11 +26,11 @@
     </div>
 <hr>
     <div class="container text-center">
-        <h4>Click the icon to see what to ad to your Order</h4>
+        <h4>Click the icon to see what to add to your Order</h4>
     <div class="design row text-center">
         <div onclick="myFunction" class=" dev col-sm">
-            <p><img id="dev" src="images/logo.png"><br><strong>Crust</strong></p>
-            <div class="devp">
+            <p><img id="crust" src="images/logo.png"><br><strong>Crust</strong></p>
+            <div class="crustp">
               <ul>
               <li>Crispy</li>
               <li>Stuffed</li>
@@ -40,8 +41,8 @@
             </div>
         </div>
         <div onclick="myFunction" class="prod col-sm">
-            <P><img id="prod" src="images/logo2.png"><br><strong>Toppings</strong></br></P>
-            <div class="prodp text-center">
+            <P><img id="top" src="images/logo2.png"><br><strong>Toppings</strong></br></P>
+            <div class="topsp text-center">
               <ul>
                 <li><input type="checkbox" value="Pineapples">Pineapples</li>
                 <li><input type="checkbox" value="Bacon">Bacon</li>
@@ -55,66 +56,78 @@
 <hr>
     </div>
 
-    <div class="container-fluid">
+    <div class="container-fluid-flav">
         <H1>Flavours</H1>
         <div class="row">
-            <div class="box col-sm-6">
+            <div class="box col-sm-6 text-white">
                 <img src="images/Jalapenos-shutterstock.com_.jpg" alt="work1">
                 <div class="hov">
                 <p class="img-desc">Jalapenos</p>
                 </div>
+                <input type="checkbox" value="Order">Order
             </div>
-            <div class="box col-sm-6">
+            <div class="box col-sm-6 text-white">
                 <img src="images/hawaiian_pizza_sh.0.jpg" alt="work2">
                 <div class="hov">
                 <p class="img-desc">Hawaiian</p>
                 </div>
+                <input type="checkbox" value="Order">Order
             </div>
-            <div class="box col-sm-6">
+            <div class="box col-sm-6 text-white">
                 <img src="images/pepperoni-pizza.jpg" alt="work3">
                 <div class="hov">
                 <p class="img-desc">Pepperoni</p>
                 </div>
+                <input type="checkbox" value="Order">Order
             </div>
-            <div class="box col-sm-6">
+            <div class="box col-sm-6 text-white">
                 <img src="images/steak-pizza-shutterstock.com_.jpg" alt="work4">
                 <div class="hov">  
                 <p class="img-desc">BBQ Steak</p>
                 </div>
+                <input type="checkbox" value="Order">Order
             </div>
-            <div class="box col-sm-6">
+            <div class="box col-sm-6 text-white">
                 <img src="images/Texas-BBQ-Chicken-Pizza_web.jpg" alt="work5">
                 <div class="hov">
                 <p class="img-desc">BBQ Chicken</p>
                 </div>
+                <input type="checkbox" value="Order">Order
             </div>
-            <div class="box col-sm-6">
-                <img src="images/italian-sausage-pizza_standard.jpg" alt="work6">
+            <div class="box col-md-6 text-white">
+                <img class="sp" src="images/sammy-joonhee-TXJlNzyNaBA-unsplash.jpg  " alt="work6">
                 <div class="hov">
                 <p class="img-desc">Italian Sausage</p>
                 </div>
+                <input type="checkbox" value="Order">Order
             </div>
-            <div class="box col-sm-6">
+            <div class="box col-sm-6 text-white">
                 <img src="images/black-olive-pizza-recipe.jpg" alt="work7">
                 <div class="hov">     
                 <p class="img-desc">Black Olive</p>
                 </div>
+                <input type="checkbox" value="Order">Order
             </div>
-            <div class="box col-sm-6">
+            <div class="box col-sm-6 text-white">
                 <img src="images/Green-Olives-pizza-shutterstock.com_.jpg" alt="work8">
                 <div class="hov">
                 <p class="img-desc">Green Olives</p>
                 </div>
+                <input type="checkbox" value="Order">Order
             </div>
         </div>
     </div>
 <hr>
-            <div class=" container-fluid text-white text-center" id="form">
+            <div class=" container-fluid  text-center" id="Order">
                 <h1>Place your Slice Order Now</h1>
-                <form action="https://gmail.us4.list-manage.com/subscribe/post?u=5fe41d3d0f80c58f1864a56af&amp;id=220575bdd1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-horizontal" target="_blank" novalidate >
-					<div class="form-group row">
-                        <input type="text" class="form-control m-2 col-sm-5" placeholder="Name..." id="name">
-                        <input type="text" class="form-control m-2 col-sm-5" placeholder="Email..." id="email">
+               <p id="order">What size do you want?</p>
+               <select name="Slice" id="Slice-sz">
+               <option>Small = KSh500/-</option>
+               <option>Medium = KSH700/-</option>
+               <option>Large = KSH1000/-</option>
+               <option>Mega = KSH1250</option>
+            </select>
+            <select name="Slice" id="Slice-tops"></select>
                     </div>
                     <div class="form-group">
                         <textarea name="" id="message" rows="6" placeholder="Your text here..." class="form-control col-sm-11" ></textarea>

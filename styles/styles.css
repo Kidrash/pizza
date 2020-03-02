@@ -2,24 +2,14 @@ h1, h2, #slogan{
     font-family: 'Tangerine', serif;
     font-size: 125px;
     text-align: center;
+    color: crimson;
   }
-  .logo{
-      text-indent: -999999px;
-      background-image: url(../images/logo2.png);
-      width: 299px;
-      height: 168px;
-  } 
-  h2{
-      font-size: 100px
-  }
+
 p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: xx-large;
     text-align: center;
 
-}
-.order-btn{
-    color: green;
 }
 img{
     max-width: 500px;
@@ -41,15 +31,37 @@ img{
 }
 .img-desc{
     text-align: center;
-    padding: 5px;
+    margin-top: auto;
+    color: black;
+    display: block;
+    opacity: 100%;
 }
 .hov {
-    padding: 5px;
-    width: 100%;
+    padding: 2px;
+    width: 69%;
+    height: 100%;;
     margin: auto;
-    margin-top: -75%;
+    margin-top: -45%;
     position: absolute;
     height: 100%;
-    background-color:;
-    opacity: 90%;
+    background-color:palegoldenrod;
+    opacity: 80%;
+    transition: 0.5 , ease;
+}
+
+img.sp{
+    width: 72%;
+    height: 100%;
+}
+.container-fluid-flav{
+    background-color:rgb(34, 33, 27);
+}
+#order{
+    font-family:  'Tangerine', serif;
+    font-size: 90px ;
+    font-style: italic;
+}
+.size{
+    width: 60%;
+    height: 60%;
 }
