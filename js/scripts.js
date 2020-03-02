@@ -1,5 +1,5 @@
 $(Document).ready(function(){
-  $('.Crustp').click(function(){
+  $('.crust').click(function(){
     $('.crustp').hide();
     $('#crust').toogle();
     $('#crust').show();
@@ -11,17 +11,14 @@ $(Document).ready(function(){
     $(".crustp").show();
   })
 
-  $(".topsp").click(function(){
-    $("#tops").toggle();
-    $(".topsp").hide();
-    $("#tops").show();
-  })
-
- $("#tops").click(function(){
-    $("#tops").hide();
+ $("#top").click(function(){
+    $("#top").hide();
     $(".topsp").toggle();
     $(".topsp").show();
   })
+  function orderPizza(){
+    let typeOfPizza = ["Jalapenos", "Hawaaian", "Pepperoni", "BBQ Steak", "BBQ Chicken", "Italian Sausage", "Black Olives", "Green Olives",]
+  }
 
   $('.hov').hover(function () {
     $(this).animate({opacity:'0.3'});
@@ -29,5 +26,6 @@ $(Document).ready(function(){
     function () {
     $(this).animate({opacity:'0'});
 });
+
 
 })
