@@ -9,7 +9,8 @@
   <title>Slice Pizza</title>
 </head>
 <body>
-    <div class="container-fluid" id="landing-pg">    
+    <div>
+      <div class="container-fluid" id="landing-pg">    
         <div class="row min-vh-100 align-items-center text-center justify-content-center flex-column">
             <div class="home-pg col-md-12 text-center" id="head">
                 <img class="logo" src="/images/Bottle Animation.gif">
@@ -115,38 +116,23 @@
 <hr>
             <div class="container-fluid  text-center" id="Order">
                 <h1>Place your Slice Order Now</h1>
-               <p id="order">What size do you want?</p>
+               <p id="Slice-sz">What size do you want?</p>
             <select name="Slice" id="Slice-sz">
                <option>Small = KSh500/-</option>
                <option>Medium = KSH700/-</option>
                <option>Large = KSH1000/-</option>
                <option>Mega = KSH1250</option>
             </select>
-            <p id="order">How many do you want?</p>
+            <div class="container">
+            <p id="number">How many do you want?</p>
             <input type="number" min="1" max="10" placeholder="1-10">
             </div> 
-            </div>
-                 
-            
-                    <div class="text-center">
+                <div class="text-center">
                    <!-- <button type="submit" class="btn btn-primary text-white text-center">Submit</button>  -->
-                   <input type="submit" class="btn btn-primary text-align-center" value="Order Now">
-                    </div>
-                </form>	
+                   <button type="submit" class="btn btn-primary text-align-center" value="Order Now" >Order Now</button>
+                </div>	
             </div>
-            <div class="footer">
-    <div class="container text-center" id="icons">
-        <img src="/social_icons/facebook.png">
-        <img src="/social_icons/flickr.png">
-        <img src="/social_icons/pinterest.png">
-        <img src="/social_icons/facebook.png">
-        <img src="./assets/social_icons/stumble_upon.png">
-        <img src="./assets/social_icons/twitter.png">
-        <img src="./assets/social_icons/you_tube.png">
-        <p id="close"><strong></strong></p>
-        <p id="year"><strong></strong></p>
-    </div>
-</div>
+        </div>
 <script src="js/scripts.js" charset="UTF-8"></script>
 <script src="https://code.jquery.com/jquery-3.4.0.js" integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo=" crossorigin="anonymous"></script>
 </body>
