@@ -61,6 +61,7 @@ img.sp{
     font-size: 90px ;
     font-style: italic;
     color: black; 
+    margin-top: 30%;
 }
 .size{
     width: 60%;
@@ -68,9 +69,11 @@ img.sp{
 }
 .crustp{
     display: none;
+    font-size: xx-large;
 }
 .topsp{
     display: none;
+    font-size: xx-large;
 }
 .crust-txt, .topping-txt, #or{
     color: darkgoldenrod;
@@ -88,3 +91,4 @@ img.sp{
     text-decoration-color: yellow
     ;
 }
+
