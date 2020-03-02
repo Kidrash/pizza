@@ -11,8 +11,8 @@
 <body>
     <div class="container-fluid" id="landing-pg">    
         <div class="row min-vh-100 align-items-center text-center justify-content-center flex-column">
-            <div class="col-md-12 text-center" id="head">
-                <img src="/images/Bottle Animation.gif">
+            <div class="home-pg col-md-12 text-center" id="head">
+                <img class="logo" src="/images/Bottle Animation.gif">
                 <h1><span class="space">SLICE<br></span></h1>
                 <p><span id="slogan">Slice all your problems away</span> </p>
                 <div class="delivery"><img src="images/delivery.png" id="delivery"></div>
@@ -20,29 +20,24 @@
         </div>
     </div>
 <hr>
-    <div class="container text-center">
-        <h2></h2>
-        <p id=""></p>
-    </div>
-<hr>
-    <div class="container text-center">
-        <h4>Click the icon to see what to add to your Order</h4>
+    <div class="option container text-center">
+        <h4>Click the icon to see what to add to your Pizza Order</h4>
     <div class="design row text-center">
         <div onclick="myFunction" class=" dev col-sm">
-            <p><img id="crust" src="images/logo.png"><br><strong>Crust</strong></p>
-            <div class="crustp">
-              <ul>
-              <li>Crispy</li>
-              <li>Stuffed</li>
-              <li>Gluten-free</li>
-              <li>Thin Crust</li>
-              <li>Thick Crust</li> 
-            </ul>
+            <p><img id="crust" src="images/logo.png"><br><span class="crust-txt"></strong>Crust</strong></p></span>
+            <div class="crustp text-white">
+                <ul>
+                    <li><input type="checkbox" value="Crispy">Crispy</li>
+                    <li><input type="checkbox" value="Stuffed">Stuffed</li>
+                    <li><input type="checkbox" value="Gluten-free">Gluten-free</li>
+                    <li><input type="checkbox" value="Thin Crust">Thin Crust</li>
+                    <li><input type="checkbox" value="Thick Crust">Thick Crust</li>
+                  </ul>
             </div>
         </div>
         <div onclick="myFunction" class="prod col-sm">
-            <P><img id="top" src="images/logo2.png"><br><strong>Toppings</strong></br></P>
-            <div class="topsp text-center">
+            <P><img id="top" src="images/logo2.png"><br><span  class="topping-txt"><strong>Toppings</strong></br></P></span>
+            <div class="topsp text-white">
               <ul>
                 <li><input type="checkbox" value="Pineapples">Pineapples</li>
                 <li><input type="checkbox" value="Bacon">Bacon</li>
@@ -55,7 +50,7 @@
     </div>
 <hr>
     </div>
-
+    <p id="or"><em><strong>OR PICK A FLAVOUR BELOW</strong></em></p>
     <div class="container-fluid-flav">
         <H1>Flavours</H1>
         <div class="row">
@@ -118,32 +113,33 @@
         </div>
     </div>
 <hr>
-            <div class=" container-fluid  text-center" id="Order">
+            <div class="container-fluid  text-center" id="Order">
                 <h1>Place your Slice Order Now</h1>
                <p id="order">What size do you want?</p>
-               <select name="Slice" id="Slice-sz">
+            <select name="Slice" id="Slice-sz">
                <option>Small = KSh500/-</option>
                <option>Medium = KSH700/-</option>
                <option>Large = KSH1000/-</option>
                <option>Mega = KSH1250</option>
             </select>
-            <select name="Slice" id="Slice-tops"></select>
-                    </div>
-                    <div class="form-group">
-                        <textarea name="" id="message" rows="6" placeholder="Your text here..." class="form-control col-sm-11" ></textarea>
-                    </div>
-                    <div class="text-right">
+            <p id="order">How many do you want?</p>
+            <input type="number" min="1" max="10" placeholder="1-10">
+            </div> 
+            </div>
+                 
+            
+                    <div class="text-center">
                    <!-- <button type="submit" class="btn btn-primary text-white text-center">Submit</button>  -->
-                   <input type="submit" class="btn btn-primary text-white text-center" value="Submit">
+                   <input type="submit" class="btn btn-primary text-align-center" value="Order Now">
                     </div>
                 </form>	
             </div>
             <div class="footer">
     <div class="container text-center" id="icons">
-        <img src="./assets/social_icons/facebook.png">
-        <img src="./assets/social_icons/flickr.png">
-        <img src="./assets/social_icons/pinterest.png">
-        <img src="./assets/social_icons/skype.png">
+        <img src="/social_icons/facebook.png">
+        <img src="/social_icons/flickr.png">
+        <img src="/social_icons/pinterest.png">
+        <img src="/social_icons/facebook.png">
         <img src="./assets/social_icons/stumble_upon.png">
         <img src="./assets/social_icons/twitter.png">
         <img src="./assets/social_icons/you_tube.png">
