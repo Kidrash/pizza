@@ -38,10 +38,10 @@ img{
 }
 .hov {
     padding: 2px;
-    width: 69%;
+    width: 55%;
     height: 100%;;
     margin: auto;
-    margin-top: -45%;
+    margin-top: -37%;
     position: absolute;
     height: 100%;
     background-color:palegoldenrod;
@@ -50,11 +50,14 @@ img{
 }
 
 img.sp{
-    width: 72%;
+    width: 80%;
     height: 100%;
 }
 .container-fluid-flav{
     background-color:rgb(34, 33, 27);
+    padding: 40px;
+    width: fit-content;
+    margin: 20px;
 }
 #order{
     font-family:  'Tangerine', serif;
@@ -88,10 +91,24 @@ img.sp{
 }
 .space{
     text-decoration: underline;
-    text-decoration-color: yellow
-    ;
+    text-decoration-color: yellow;
 }
-.col-md-6 text-center{
-    align-content: space-around;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
