@@ -93,6 +93,20 @@ img.sp{
     text-decoration: underline;
     text-decoration-color: yellow;
 }
+input[type=["checkbox"] {
+    display: none;
+}
+input[type=checkbox]:before{
+    content:"\2714";
+    border: 0.1em solid #000;
+    display: inline-block
+    width 2em;
+    height: 4em;
+    padding-left: -0.1em; 
+    padding-bottom: -0.1em;
+    margin-right: -0.1em
+
+}
 
 
 
