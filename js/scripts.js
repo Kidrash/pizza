@@ -85,35 +85,20 @@ function totalCrust(receipt,total) {
   } else if (selectedCrust === "Stuffed") {
       total = total
   } else if (selectedCrust === "Gluten-free") {
-      total += 3
+      total += 150
   } else if (selectedCrust === "Thin Crust") {
       total = total
   } else if (selectedCrust === "Thick Crust") {
       total = total
   };
-  totalSauce(receipt,total);
-
-function totalSauce(receipt,total) {
-  var sauceArray = document.getElementsByClassName("sauce_choice");
-  for (var i = 0; i < sauceArray.length; i++) { // declare counter variable set to 0, increment countery until it is no longer less than the size of the array
-      if (sauceArray[i].checked) {
-          var selectedSauce = sauceArray[i].value;
-          receipt = receipt + "+ " + selectedSauce + "<br>";
-      };
-  };
-
-
 function printInvoice(receipt,total) {
-  document.getElementById("your_order").innerHTML = receipt + "<hr>" + "<strong>Your total will be:</strong> $" + total;
+  document.getElementById("Order-Now").innerHTML = receipt + "<hr>" + "<strong>Your total will be:</strong> KSH" + total;
 };
 function clearForm() {
-  document.getElementById("your_order").innerHTML = "Place your order today!";
-  document.getElementById("size_form").reset();
-  document.getElementById("meat_form").reset();
-  document.getElementById("cheese_form").reset();
-  document.getElementById("crust_form").reset();
-  document.getElementById("sause_form").reset();
-  document.getElementById("veggies_form").reset();
+  document.getElementById("Order Now").innerHTML = "Order Now!";
+  document.getElementById("Slice-size").reset();
+  document.getElementById("flavor").reset();
+  document.getElementById("crust").reset();
 };
 
 
