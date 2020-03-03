@@ -101,37 +101,8 @@ function totalSauce(receipt,total) {
           receipt = receipt + "+ " + selectedSauce + "<br>";
       };
   };
-  // there is no cost change for different sauces, but this code is here for quickly updating costs in the future
-  // if (selectedSauce === "Marinara Sauce") {
-  //     total = total
-  // } else if (selectedSauce === "White Sauce") {
-  //     total = total
-  // } else if (selectedSauce === "Barbeque Sauce") {
-  //     total = total
-  // } else if (selectedSauce === "No Sauce") {
-  //     total = total
-  // };
-  totalVeggies(receipt,total);
-};
-function totalVeggies(receipt,total) {
-  var veggiesArray = document.getElementsByClassName("veggies_type");
-  var mySelectedVeggies = []
-  var veggiesTotal = 0
-  for (var i = 0; i < veggiesArray.length; i++) {
-      if (veggiesArray[i].checked) {
-          mySelectedVeggies.push(veggiesArray[i].value);
-          receipt = receipt + "+ " + veggiesArray[i].value + "<br>";
-      };
-  };
-  var veggiesCount = mySelectedVeggies.length;
-  if (veggiesCount > 1) {
-      veggiesTotal = (veggiesCount - 1);
-  } else {
-      veggiesTotal = 0;
-  };
-  total = total + veggiesTotal;
-  printInvoice(receipt,total);
-};
+
+
 function printInvoice(receipt,total) {
   document.getElementById("your_order").innerHTML = receipt + "<hr>" + "<strong>Your total will be:</strong> $" + total;
 };
